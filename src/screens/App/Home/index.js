@@ -10,7 +10,17 @@ const Tab = createMaterialTopTabNavigator();
 
 function Home() {
     return (
-        <Tab.Navigator initialRouteName="Dành cho bạn" labeled={true} barStyle={{backgroundColor: "#F2F2F2"}}>
+        <Tab.Navigator 
+            initialRouteName="Dành cho bạn" 
+            labeled={true} 
+            screenOptions={{
+                tabBarActiveTintColor: '#00b060',
+                tabBarInactiveTintColor: '#cdcdcd',
+                tabBarLabelStyle: { fontSize: 12 },
+                tabBarStyle: { backgroundColor: '#f2f2f2' },
+                tabBarIndicatorStyle: {backgroundColor: '#00b060'}
+            }}
+        >
             <Tab.Screen 
                 name="Đang theo dõi"
                 component={YourFollow}
