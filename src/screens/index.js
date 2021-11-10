@@ -9,5 +9,23 @@ import ForYou from './App/Home/forYou'
 import YourFollow from './App/Home/yourFollow'
 import DetailPost from './App/DetailPost'
 import CommentScreen from './App/CommentScreen'
+import Post from './App/Account/post'
+import Place from './App/Account/place'
+import Store from './App/Account/store'
 
-export {Login, Home, Regist, Map, Add, Notify, Account, ForYou, YourFollow, DetailPost, CommentScreen};
+export {
+    Login, 
+    Home,
+    Regist, 
+    Map, 
+    Add, 
+    Notify, 
+    Account, 
+    ForYou, 
+    YourFollow, 
+    DetailPost, 
+    CommentScreen,
+    Post,
+    Place,
+    Store,
+};

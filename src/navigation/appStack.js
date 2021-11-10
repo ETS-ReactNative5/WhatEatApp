@@ -1,5 +1,5 @@
 import React from 'react';
-import {Home, Map, Add, Notify, Account, DetailPost} from "../screens"
+import {Home, Map, Add, Notify, Account,} from "../screens"
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import Feather from 'react-native-vector-icons/Feather';
 import { createStackNavigator } from '@react-navigation/stack';
