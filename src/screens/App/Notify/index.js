@@ -3,21 +3,73 @@ import {Text, View, Image, TextInput} from 'react-native'
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 import Feather from 'react-native-vector-icons/Feather';
 import {styles} from '../Notify/style'
+import {NotiComment, NotiFollow, NotiLike} from '../../../components/index'
 
 function Notify({navigation}) {
     return (
-        <View>                          
-            <View>        
-                <View style={styles.container2}>                               
-                    <Text style={styles.title}>Thông báo</Text>
-                </View>
-            </View>            
-            <View>
-                <ScrollView style={{height: 678}}>
+        <View>   
+            <View style={styles.container2}>                               
+                <Text style={styles.title}>Thông báo</Text>
+            </View>
+            <View style={{marginTop: 10,}}>
+            <ScrollView style={{height: 615, bottom: 7}}>
                     <Text style={styles.timeNew}>Hôm nay</Text>
-                    
-                </ScrollView>
-            </View>               
+                    <NotiLike
+                        imageUser={require('../../../assets/img/ava.png')}
+                        username="Minh Hiếu, Phước Trung, Minh Nghĩa"
+                        imagePost={require('../../../assets/img/sample.png')}
+                    />
+                    <NotiComment
+                        imageUser={require('../../../assets/img/ava.png')}
+                        username="Minh Hiếu, Phước Trung, Minh Nghĩa"
+                        imagePost={require('../../../assets/img/sample.png')}
+                    />
+                    <NotiFollow
+                        imageUser={require('../../../assets/img/ava.png')}
+                        username="Minh Hiếu"
+                    />
+                    <Text style={styles.timeOld}>Tuần trước</Text>
+                    <NotiLike
+                        imageUser={require('../../../assets/img/ava.png')}
+                        username="Minh Hiếu, Phước Trung, Minh Nghĩa"
+                        imagePost={require('../../../assets/img/sample.png')}
+                    />
+                    <NotiComment
+                        imageUser={require('../../../assets/img/ava.png')}
+                        username="Minh Hiếu, Phước Trung, Minh Nghĩa"
+                        imagePost={require('../../../assets/img/sample.png')}
+                    />
+                    <NotiFollow
+                        imageUser={require('../../../assets/img/ava.png')}
+                        username="Minh Hiếu"
+                    />
+                    <Text style={styles.timeOld}>Tháng trước</Text>
+                    <NotiLike
+                        imageUser={require('../../../assets/img/ava.png')}
+                        username="Minh Hiếu, Phước Trung, Minh Nghĩa"
+                        imagePost={require('../../../assets/img/sample.png')}
+                    />
+                    <NotiComment
+                        imageUser={require('../../../assets/img/ava.png')}
+                        username="Minh Hiếu, Phước Trung, Minh Nghĩa"
+                        imagePost={require('../../../assets/img/sample.png')}
+                    />
+                    <NotiFollow
+                        imageUser={require('../../../assets/img/ava.png')}
+                        username="Minh Hiếu"
+                    />
+                    <NotiComment
+                        imageUser={require('../../../assets/img/ava.png')}
+                        username="Minh Hiếu, Phước Trung, Minh Nghĩa"
+                        imagePost={require('../../../assets/img/sample.png')}
+                    />
+                    <NotiLike
+                        imageUser={require('../../../assets/img/ava.png')}
+                        username="Minh Hiếu, Phước Trung, Minh Nghĩa"
+                        imagePost={require('../../../assets/img/sample.png')}
+                    />
+            </ScrollView> 
+            </View>            
         </View>
     );
 };
