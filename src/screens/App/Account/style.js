@@ -50,61 +50,52 @@ export const styles = StyleSheet.create({
       paddingVertical: 2,
       marginTop: 10
     },
-    follow: {
-      borderRadius: 8,
-      backgroundColor: '#00b060',
-      paddingHorizontal: 10,
-      marginLeft: 150
-    },
-    unfollow: {
-
-    },
-    bottonTab: {
-      flexDirection: 'row',
-      backgroundColor: 'white',
-      width: 360,
-      height: 64,
-      justifyContent: 'center',
-      alignItems: 'center',
+    buttonTabActive: {
       alignSelf: 'center',
-      position: 'absolute',
-      bottom: 60,
-      flex: 1,
-      borderRadius: 8,
-      shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 2,
-        },
-        shadowOpacity: 0.23,
-        shadowRadius: 2.62,
-
-        elevation: 4,
+      color: 'black',
+      paddingVertical: 2
     },
-    icon: {
-      fontSize: 32,
-      marginHorizontal: 30
-    },
-    content: {
-      textAlign: 'left',
-      marginHorizontal: 20
-    },
-    place: {
-      marginHorizontal: 18,
-      marginVertical: 20,
-      flexDirection: 'row',
-      alignItems: 'center'
-    },
-    placeName: {
-      fontWeight: 'bold'
-    },
-    placeAddress: {
-      fontStyle: 'italic'
+    buttonTabInActive: {
+      alignSelf: 'center',
+      color: 'grey',
+      paddingVertical: 2
     },
     image: {
-      width: 72,
-      height: 72,
-      borderRadius: 50,
-      marginHorizontal: 5,      
+      width: 126,
+      height: 126,
+      marginHorizontal: 2,  
+      marginTop: 4    
+    },
+
+
+    containerPlace: {
+      width: 380, 
+      marginHorizontal: 10, 
+      borderWidth: 0.5, 
+      borderRadius: 8, 
+      borderColor: 'grey', 
+      flexDirection: 'row',
+      marginVertical: 5
+    },
+    imagePlace: {
+      width: 94,
+      height: 84,
+      borderRadius: 8,
+      marginTop: 0.2
+    },
+    textPlace: {
+      flexDirection: 'column',
+      marginLeft: 10,
+      marginVertical: 7
+    },
+    namePlace: {
+      fontWeight: 'bold', 
+      fontSize: 16, 
+      color: '#00b060'
+    },
+    address: {
+      width: 265, 
+      marginVertical: 3, 
+      fontStyle: 'italic'
     }
 });

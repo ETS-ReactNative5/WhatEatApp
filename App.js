@@ -29,18 +29,6 @@ const App = () => {
           name="CommentScreen"
           component={CommentScreen}
         />
-        <Stack.Screen
-          name="Post"
-          component={Post}
-        />
-        <Stack.Screen
-          name="Place"
-          component={Place}
-        />
-        <Stack.Screen
-          name="Store"
-          component={Store}
-        />
       </Stack.Navigator>
     </NavigationContainer>
   );
