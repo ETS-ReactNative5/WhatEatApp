@@ -1,7 +1,6 @@
 import React from 'react'
 import {Text, View} from 'react-native'
 import { ScrollView } from 'react-native-gesture-handler';
-import Feather from 'react-native-vector-icons/Feather';
 import {styles} from './style'
 import {FoodRecommend} from '../../../components/index'
 import {PlaceRecommend} from '../../../components/index';
