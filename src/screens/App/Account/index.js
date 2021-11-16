@@ -10,7 +10,9 @@ import Post from './post';
 import Store from './store';
 
 function Account() { 
-    const [state, setState] = useState('');  
+    const [state, setState] = useState({
+        activeIndex: 1,
+    });  
     
     const selectTab = ( index ) => {
         setState({
