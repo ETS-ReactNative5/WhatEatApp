@@ -8,10 +8,10 @@ import {
 } from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 
-function PlaceRecommend({title, image, rate}){
+function PlaceRecommend({title, image, rate, onPress}){
     return(
         <View style={styles.container}>
-            <TouchableOpacity style={styles.rectangle}>
+            <TouchableOpacity style={styles.rectangle} onPress={onPress}>
                 <Image style={styles.image} source={image}/>
                 {title && <Text style={styles.text}> {title} </Text>}
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
@@ -28,15 +28,15 @@ export default PlaceRecommend;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        width: 140,
-        height: 146,
+        width: 160,
+        height: 155,
         borderRadius: 8,
         marginLeft: 10
     },
     rectangle: {
         backgroundColor: '#fff',
-        width: 137,
-        height: 123,
+        width: 160,
+        height: 130,
         borderRadius: 8,
         marginTop: 20,
         alignItems: 'center',

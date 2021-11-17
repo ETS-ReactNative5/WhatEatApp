@@ -79,9 +79,8 @@ export const styles = StyleSheet.create({
     },
     imagePlace: {
       width: 94,
-      height: 84,
+      height: 91,
       borderRadius: 8,
-      marginTop: 0.2
     },
     textPlace: {
       flexDirection: 'column',

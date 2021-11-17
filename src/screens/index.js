@@ -12,6 +12,8 @@ import CommentScreen from './App/CommentScreen'
 import Post from './App/Account/post'
 import Place from './App/Account/place'
 import Store from './App/Account/store'
+import Food from './App/Food'
+import PlaceScreen from './App/Place'
 
 export {
     Login, 
@@ -28,4 +30,6 @@ export {
     Post,
     Place,
     Store,
+    Food,
+    PlaceScreen,
 };

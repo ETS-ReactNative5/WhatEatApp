@@ -15,7 +15,7 @@ function PostForYou({title, image, place, author, numLike, numComment, onPress})
                 <Image style={styles.image} source={image}/> 
                 <View style={styles.rectangle}>
                     {title && <Text style={styles.text}> {title} </Text>}
-                    {place && <Text style={styles.place}> {place} </Text>} 
+                    {place && <Text style={styles.place} numberOfLines={1} ellipsizeMode='tail'> {place} </Text>} 
                     {author && <Text style={styles.author}> {author} </Text>}
                     <View style={{flexDirection: 'row'}}>
                         {numLike && <Text style={styles.like}> {numLike} </Text>}
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     },
     rectangle: {
         backgroundColor: '#fff',
-        width: 183,
+        width: 205,
         height: 147,
         borderRadius: 8,
         alignItems: 'flex-end',

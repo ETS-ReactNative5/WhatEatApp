@@ -9,8 +9,9 @@ import {
   TextInput,
   Picker,
   Button,
+  TouchableOpacity
 } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import {  } from 'react-native-gesture-handler';
 import MapView, {Marker, Callout} from 'react-native-maps';
 import Feather from 'react-native-vector-icons/Feather';
 import Modal from "react-native-modal";
@@ -60,7 +61,7 @@ function Map() {
     return (
         <View>
             <MapView
-                    style={{width: null, height: 660}}
+                    style={{width: null, height: 725}}
                     region={{
                         latitude: 10.980638,
                         longitude: 106.674723,
@@ -84,10 +85,10 @@ function Map() {
                         ))
                     }
             </MapView>
-            <View style={{height: 120, borderRadius: 8, marginHorizontal: 10, backgroundColor: 'rgba(52, 52, 52, 0.4)', marginTop: -650}}>
+            <View style={{height: 120, borderRadius: 8, marginHorizontal: 10, backgroundColor: 'rgba(52, 52, 52, 0.4)', marginTop: -700}}>
                 <View style={{flexDirection: 'row', marginTop: 3}}>
                     <View style={{backgroundColor: 'white', marginHorizontal: 5, marginVertical: 5, borderRadius: 8, flexDirection: 'row', height: 40}}>
-                        <TextInput style={{width: 230, marginHorizontal: 5}} placeholder="Nhập tên món ăn hoặc địa điểm"></TextInput>
+                        <TextInput style={{width: 250, marginHorizontal: 5}} placeholder="Nhập tên món ăn hoặc địa điểm"></TextInput>
                         <TouchableOpacity>
                             <Feather name="camera" size={24} color={'grey'} style={{marginHorizontal: 10, marginTop: 6}}/>
                         </TouchableOpacity>
@@ -112,7 +113,7 @@ function Map() {
                     <View>
                         <Text style={{color: 'white', fontWeight: 'bold', marginBottom: 5, marginLeft: 5}}>Danh mục</Text>
                         <TouchableOpacity 
-                            style={{backgroundColor: 'white', width: 110, height: 30, borderRadius: 8, alignItems: 'center', marginHorizontal: 5}}
+                            style={{backgroundColor: 'white', width: 115, height: 30, borderRadius: 8, alignItems: 'center', marginHorizontal: 5}}
                             onPress={toggleModalCategory}
                         >
                             <Text style={{color: 'grey', marginTop: 5}}>Danh mục</Text>
@@ -121,7 +122,7 @@ function Map() {
                     <View>
                         <Text style={{color: 'white', fontWeight: 'bold', marginBottom: 5, marginLeft: 5}}>Đánh giá</Text>
                         <TouchableOpacity 
-                            style={{backgroundColor: 'white', width: 110, height: 30, borderRadius: 8, alignItems: 'center', marginHorizontal: 5}}
+                            style={{backgroundColor: 'white', width: 115, height: 30, borderRadius: 8, alignItems: 'center', marginHorizontal: 5}}
                             onPress={toggleModalRate}
                         >
                             <Text style={{color: 'grey', marginTop: 5}}>Đánh giá</Text>
@@ -129,8 +130,8 @@ function Map() {
                     </View>
                 </View>
             </View>
-            <Modal isVisible={isModalVisible} animationIn='zoomIn' animationInTiming={1000}>
-                <View style={{ backgroundColor: 'white', width: 350, borderRadius: 8, height: 270, alignItems: 'center'}}>
+            <Modal isVisible={isModalVisible} animationIn='zoomIn' animationInTiming={300}>
+                <View style={{ backgroundColor: 'white', width: 350, borderRadius: 8, height: 275, alignItems: 'center'}}>
                     <Text style={{fontSize: 16, fontWeight: 'bold', marginVertical: 10}}>Chọn địa điểm bạn muốn</Text>
                     <View style={{borderColor: 'grey', borderWidth: 1, borderRadius: 8, height: 50, marginBottom: 10, width: 300}}>
                         <Picker
@@ -197,25 +198,25 @@ function Map() {
                             })}
                         </Picker>
                     </View>
-                    <View style={{width: 300,}}>
-                        <Button title="OK" onPress={toggleModalPlace} color="#00b060"/>
-                    </View>
+                    <TouchableOpacity onPress={toggleModalPlace} style={{width: 300, backgroundColor: '#00b060', padding: 10, borderRadius: 8, alignItems: 'center'}}>
+                        <Text style={{color: 'white', fontWeight: 'bold'}}>OK</Text>
+                    </TouchableOpacity>
                 </View>
             </Modal>
-            <Modal isVisible={isModalCategoryVisible} animationIn='zoomIn' animationInTiming={1000} style={{height: 260}}>
+            <Modal isVisible={isModalCategoryVisible} animationIn='zoomIn' animationInTiming={300} style={{height: 260}}>
                 <View style={{ backgroundColor: 'white', width: 350, borderRadius: 8, height: 260, alignItems: 'center'}}>
                     <Text style={{fontSize: 16, fontWeight: 'bold', marginVertical: 10}}>Chọn danh mục bạn muốn</Text>
-                    <View style={{width: 300,}}>
-                        <Button title="OK" onPress={toggleModalCategory} color="#00b060"/>
-                    </View>
+                    <TouchableOpacity onPress={toggleModalCategory} style={{width: 300, backgroundColor: '#00b060', padding: 10, borderRadius: 8, alignItems: 'center'}}>
+                        <Text style={{color: 'white', fontWeight: 'bold'}}>OK</Text>
+                    </TouchableOpacity>
                 </View>
             </Modal>
-            <Modal isVisible={isModalRateVisible} animationIn='zoomIn' animationInTiming={1000} style={{height: 260}}>
+            <Modal isVisible={isModalRateVisible} animationIn='zoomIn' animationInTiming={300} style={{height: 260}}>
                 <View style={{ backgroundColor: 'white', width: 350, borderRadius: 8, height: 260, alignItems: 'center'}}>
                     <Text style={{fontSize: 16, fontWeight: 'bold', marginVertical: 10}}>Chọn mức đánh giá bạn muốn</Text>
-                    <View style={{width: 300,}}>
-                        <Button title="OK" onPress={toggleModalRate} color="#00b060"/>
-                    </View>
+                    <TouchableOpacity onPress={toggleModalRate} style={{width: 300, backgroundColor: '#00b060', padding: 10, borderRadius: 8, alignItems: 'center'}}>
+                        <Text style={{color: 'white', fontWeight: 'bold'}}>OK</Text>
+                    </TouchableOpacity>
                 </View>
             </Modal>
         </View>

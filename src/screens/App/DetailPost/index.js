@@ -20,8 +20,8 @@ function DetailPost({navigation}) {
                     </View>
                 </View>            
                 <View>
-                    <ScrollView style={{height: 678}}>
-                        <View style={{flexDirection: 'row', marginHorizontal: 20, marginVertical: 20, alignItems: 'center'}}>
+                    <ScrollView>
+                        <View style={{flexDirection: 'row', marginHorizontal: 20, alignItems: 'center', marginTop: 20,}}>
                                 <Image source={require('../../../assets/img/ava.png')} style={styles.ava}/>
                                 <View style={{flexDirection: 'column', marginLeft: 4, marginTop: -6}}>
                                     <Text style={styles.author}>Minh Hiếu</Text>
@@ -31,7 +31,7 @@ function DetailPost({navigation}) {
                                     <Text style={{color: 'white'}}>Đang theo dõi</Text>
                                 </TouchableOpacity>                       
                         </View>
-                        <View style={{paddingBottom: 100, flexDirection: 'column'}}>
+                        <View style={{paddingBottom: 180, flexDirection: 'column'}}>
                             <Text style={styles.content}>
                             Nội dung review. Nội dung review. Nội dung review. 
                             Nội dung review. Nội dung review. Nội dung review. 
@@ -59,6 +59,11 @@ function DetailPost({navigation}) {
                                 <Text style={{marginHorizontal: 90, textAlign: 'left', fontWeight: 'bold'}}>10 lượt thích</Text>
                                 <Text style={{marginHorizontal: 90, textAlign: 'right', fontWeight: 'bold'}}>10 bình luận</Text>                              
                             </View>
+                            <Comment
+                                author="Minh Hiếu"
+                                image={require('../../../assets/img/ava.png')}
+                                content="Nội dung bình luận. Nội dung bình luận. Nội dung"
+                            />
                             <Comment
                                 author="Minh Hiếu"
                                 image={require('../../../assets/img/ava.png')}

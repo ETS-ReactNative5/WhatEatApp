@@ -12,7 +12,7 @@ function Notify({navigation}) {
                 <Text style={styles.title}>Thông báo</Text>
             </View>
             <View style={{marginTop: 10,}}>
-            <ScrollView style={{height: 615, bottom: 7}}>
+            <ScrollView style={{height: 670, bottom: 7}}>
                     <Text style={styles.timeNew}>Hôm nay</Text>
                     <NotiLike
                         imageUser={require('../../../assets/img/ava.png')}

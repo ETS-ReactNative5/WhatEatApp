@@ -18,7 +18,7 @@ function CommentScreen({navigation: {goBack}}) {
                     <Text style={styles.title}>Bài viết của Minh Hiếu</Text>
                 </View>
             </View>
-            <View style={{paddingBottom: 160, marginTop: 10}}>
+            <View style={{paddingBottom: 165, marginTop: 10}}>
                 <ScrollView>                          
                     <Comment
                         author="Minh Hiếu"
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
     bottonTab: {
         flexDirection: 'row',
       backgroundColor: 'white',
-      width: 380,
+      width: 390,
       height: 70,
       justifyContent: 'center',
       alignItems: 'center',
@@ -144,7 +144,7 @@ const styles = StyleSheet.create({
         borderWidth: 0.5,
         borderColor: '#c4c4c4',
         borderRadius: 8,
-        width: 300
+        width: 320
     },
     container2: {
         flexDirection: 'row',

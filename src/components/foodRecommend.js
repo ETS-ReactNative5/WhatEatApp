@@ -8,10 +8,10 @@ import {
 } from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 
-function FoodRecommend({title, image}){
+function FoodRecommend({title, image, onPress}){
     return(        
         <View style={styles.container}>
-            <TouchableOpacity style={styles.rectangle}>
+            <TouchableOpacity style={styles.rectangle} onPress={onPress}>
                 <Image style={styles.image} source={image}/>
                 {title && <Text style={styles.text}> {title} </Text>}
             </TouchableOpacity>

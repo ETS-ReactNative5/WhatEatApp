@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     },
     container2: {
         marginLeft: 5,
-        width: 285,
+        width: 304,
         paddingRight: 80
     },
     image: {

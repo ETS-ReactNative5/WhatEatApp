@@ -19,15 +19,15 @@ function PostFollowing({title, image, avatar, time, place, author, content, numL
                         {time && <Text style={styles.time}> {time} </Text>}
                     </View>
                     <TouchableOpacity>
-                        <Feather name='more-vertical' style={{fontSize: 14, marginTop: 10, marginLeft: 220}}/>    
+                        <Feather name='more-vertical' style={{fontSize: 14, marginTop: 10, marginLeft: 250}}/>    
                     </TouchableOpacity>                       
                 </View>               
                 <TouchableOpacity style={styles.container2}>
                     <Image style={styles.image} source={image}/> 
                     <View style={styles.rectangle}>
                         {title && <Text style={styles.title}> {title} </Text>}
-                        {place && <Text style={styles.place}> {place} </Text>} 
-                        {content && <Text style={styles.content}> {content} </Text>}
+                        {place && <Text style={styles.place} numberOfLines={1} ellipsizeMode='tail'> {place} </Text>} 
+                        {content && <Text style={styles.content} numberOfLines={2} ellipsizeMode='tail'> {content} </Text>}
                         <View style={{flexDirection: 'row'}}>
                             {numLike && <Text style={styles.like}> {numLike} </Text>}
                             <Feather name='thumbs-up' style={styles.likeIcon}/>
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         borderRadius: 8,
-        marginTop: 10,
+        marginTop: 15,
         height: 344,
         flexDirection: 'column',
     },

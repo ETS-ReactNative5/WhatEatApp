@@ -29,11 +29,12 @@ const styles = StyleSheet.create({
     container: {
         marginHorizontal: 10,
         marginTop: 10,
-        flexDirection: 'row'
+        flexDirection: 'row',
+        width: null
     },
     container2: {
         marginLeft: 5,
-        width: 285,
+        width: 304,
         paddingRight: 80
     },
     image: {

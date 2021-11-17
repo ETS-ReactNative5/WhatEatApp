@@ -38,8 +38,8 @@ const styles = StyleSheet.create({
         marginVertical: 2,
     },
     image: {
-        width: 126,
-        height: 126,
+        width: 132,
+        height: 132,
         borderColor: '#000',
         borderRadius: 8,
     },

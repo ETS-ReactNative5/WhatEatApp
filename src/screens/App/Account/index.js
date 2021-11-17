@@ -49,7 +49,7 @@ function Account() {
             <View>        
                 <Text style={styles.title}>Minh Hiếu</Text>
             </View>
-            <ScrollView style={{marginBottom: 40}}>
+            <ScrollView style={{marginBottom: 45}}>
                     <Image source={require('../../../assets/img/ava.png')} style={styles.ava}/>
                     <Text style={styles.username}>@hieutm</Text>
                     <View style={styles.container2}>

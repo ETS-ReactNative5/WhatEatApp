@@ -24,7 +24,7 @@ function Add({navigation}) {
                         <TextInput
                             style={styles.content}
                             multiline
-                            numberOfLines={4}
+                            numberOfLines={5}
                         />
                             <View style={styles.place}>
                                 <Feather name="map-pin" style={{fontSize: 24}}/>

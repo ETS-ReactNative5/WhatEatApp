@@ -14,10 +14,12 @@ function ForYou({navigation}) {
                 <FoodRecommend 
                     title="Phở"
                     image={require('../../../assets/img/bunbo.png')}
+                    onPress={() => navigation.navigate('Food')}
                 />
                 <FoodRecommend 
                     title="Phở"
                     image={require('../../../assets/img/bunbo.png')}
+                    onPress={() => navigation.navigate('Food')}
                 />
                 <FoodRecommend 
                     title="Phở"
@@ -38,6 +40,7 @@ function ForYou({navigation}) {
                     title="Mì gia Khánh Duy"
                     rate='4.5'
                     image={require('../../../assets/img/place.png')}
+                    onPress={() => navigation.navigate('PlaceScreen')}
                 />
                 <PlaceRecommend 
                     title="Mì gia Khánh Duy"
