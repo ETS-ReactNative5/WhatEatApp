@@ -2,7 +2,7 @@ import React from 'react'
 import {SafeAreaView} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { DetailPost, CommentScreen, Post, Place, Store, Food, PlaceScreen} from './src/screens';
+import { DetailPost, CommentScreen, Post, Place, Store, Food, PlaceScreen, } from './src/screens';
 
 import AppStack from './src/navigation/appStack';
 import AuthStack from './src/navigation/authStack';

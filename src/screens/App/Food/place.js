@@ -1,19 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {Text, View, Image} from 'react-native'
 import { ScrollView } from 'react-native-gesture-handler';
 import Feather from 'react-native-vector-icons/Feather';
 import { styles } from './style';
-import {PickPlace}  from '../../../components/index'
+import {PickPlace} from '../../../components/index';
 import { useNavigation } from '@react-navigation/native';
 
 function Place() {
     const navigation = useNavigation();
-    
-    const [image, setImage] = useState('');
-    const [name, setName] = useState('');
-    const [address, setAddress] = useState('');
-    const [phone, setPhone] = useState('');
-
     return (
         <View>
             <View style={{flexDirection: 'row', marginTop: 4, flex: 1, flexWrap: 'wrap', marginLeft: 1}}>
@@ -41,7 +35,7 @@ function Place() {
                     address="200, Trần Văn Ơn, Thủ Dầu Một, Bình Dương"
                     phone="0346489037"
                 />
-            </View> 
+            </View>            
         </View>
     );
 };

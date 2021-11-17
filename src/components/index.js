@@ -8,6 +8,7 @@ import PostStored from './postStored';
 import NotiComment from './notiComment';
 import NotiFollow from './notiFollow';
 import NotiLike from './notiLike';
+import PickPlace from './pickPlace';
 
 export {
     FoodRecommend, 
@@ -20,4 +21,5 @@ export {
     NotiComment,
     NotiFollow,
     NotiLike,
+    PickPlace,
 };

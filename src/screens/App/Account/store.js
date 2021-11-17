@@ -3,8 +3,11 @@ import {Text, View} from 'react-native'
 import { ScrollView } from 'react-native-gesture-handler';
 import Feather from 'react-native-vector-icons/Feather';
 import PostStored from '../../../components/postStored';
+import { useNavigation } from '@react-navigation/native';
 
 function Store() {
+    const navigation = useNavigation();
+    
     return (
         <View>
             <View style={{flexDirection: 'row', marginTop: 4, flex: 1, flexWrap: 'wrap', marginLeft: 1}}>

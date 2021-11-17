@@ -62,8 +62,8 @@ const styles = StyleSheet.create({
     text: {
         color: '#000',
         fontWeight: 'bold',
-        fontSize: 16,
-        marginTop: 4, 
+        fontSize: 18,
+        marginTop: 10, 
         textAlign: 'right'
     },
     place: {

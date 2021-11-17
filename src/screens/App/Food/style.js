@@ -12,26 +12,43 @@ export const styles = StyleSheet.create({
       justifyContent: 'center',
       width: null,
     },
+    container3: {
+      flexDirection: 'column',
+      width: null,
+      marginTop: 20
+    },
     title: {
         color: '#00B060',
         fontSize: 18,
         fontWeight: 'bold',
-        marginVertical: 10
+        marginVertical: 5
     },
-    timeNew: {
-      color: '#000',
-      fontWeight: 'bold',
+    image: {
+      width: 150,
+      height: 150,
+      borderRadius: 100,
+      alignSelf: 'center'
+    },
+    description: {
+      marginHorizontal: 15,
+      marginVertical: 10,
       fontSize: 16,
       textAlign: 'left',
-      marginLeft: 15,
-      marginBottom: 10,
+      alignSelf: 'center'
     },
-    timeOld: {
-      color: 'grey',
+
+    buttonTabActive: {
+      alignSelf: 'center',
+      color: 'black',
+      paddingVertical: 2,
+      fontSize: 18,
       fontWeight: 'bold',
-      fontSize: 14,
-      marginTop: 20,
-      textAlign: 'left',
-      marginLeft: 15
     },
+    buttonTabInActive: {
+      alignSelf: 'center',
+      color: 'grey',
+      paddingVertical: 2,
+      fontSize: 18,
+    },
+
 });
