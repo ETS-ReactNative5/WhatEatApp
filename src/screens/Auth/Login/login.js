@@ -47,7 +47,7 @@ function Login({navigation}) {
                         <Text style={{color: 'white'}}>ĐĂNG KÝ</Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={styles.buttonGreen} onPress={() => navigation.navigate('Home')}>
+                    <TouchableOpacity style={styles.buttonGreen} onPress={() => navigation.navigate('AppStack')}>
                         <Text style={{color: 'white'}}>ĐĂNG NHẬP</Text>
                     </TouchableOpacity>
                 </View>
