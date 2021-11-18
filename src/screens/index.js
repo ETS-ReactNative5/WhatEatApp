@@ -14,6 +14,8 @@ import Place from './App/Account/place'
 import Store from './App/Account/store'
 import Food from './App/Food'
 import PlaceScreen from './App/Place'
+import PickPlaceScreen from './App/PickPlaceScreen'
+import EditProfile from './App/EditProfile'
 
 export {
     Login, 
@@ -32,4 +34,6 @@ export {
     Store,
     Food,
     PlaceScreen,
+    PickPlaceScreen,
+    EditProfile,
 };

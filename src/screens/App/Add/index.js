@@ -3,8 +3,11 @@ import {Text, View, Image, TextInput} from 'react-native'
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 import Feather from 'react-native-vector-icons/Feather';
 import {styles} from '../Add/style'
+import { useNavigation } from '@react-navigation/native';
 
-function Add({navigation}) {
+function Add() {
+    const navigation = useNavigation();
+
     return (
         <View>                          
             <View>        
@@ -49,7 +52,7 @@ function Add({navigation}) {
                     <TouchableOpacity>
                         <Feather name='image' style={styles.icon}/>
                     </TouchableOpacity>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate('PickPlaceScreen')}>
                         <Feather name='map-pin' style={styles.icon}/>
                     </TouchableOpacity>
                     <TouchableOpacity>

@@ -66,24 +66,28 @@ function Account() {
                     <Image source={require('../../../assets/img/ava.png')} style={styles.ava}/>
                     <Text style={styles.username}>@hieutm</Text>
                     <View style={styles.container2}>
-                        <View style={styles.countContain}>
-                            <Text style={styles.count}>10</Text>
-                            <Text>Đang theo dõi</Text>
-                        </View>
+                        <TouchableOpacity>
+                            <View style={styles.countContain}>
+                                <Text style={styles.count}>10</Text>
+                                <Text>Đang theo dõi</Text>
+                            </View>
+                        </TouchableOpacity>
                         <View style={styles.countContain}>
                             <Text style={styles.count}>10</Text>
                             <Text>Bài viết</Text>
                         </View>
-                        <View style={styles.countContain}>
-                            <Text style={styles.count}>10</Text>
-                            <Text>Người theo dõi</Text>
-                        </View>
+                        <TouchableOpacity>
+                            <View style={styles.countContain}>
+                                <Text style={styles.count}>10</Text>
+                                <Text>Người theo dõi</Text>
+                            </View>
+                        </TouchableOpacity>
                     </View>
                     <Text style={styles.username}>
                         Food Reviewer {'\n'}
                         #20000812 
                     </Text>
-                    <TouchableOpacity style={styles.button}>
+                    <TouchableOpacity onPress={() => navigation.navigate('EditProfile')} style={styles.button}>
                         <Text>Chỉnh sửa trang cá nhân</Text>
                     </TouchableOpacity> 
                     <View style={{marginTop: 20}}>
