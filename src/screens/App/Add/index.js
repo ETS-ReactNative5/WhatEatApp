@@ -1,12 +1,37 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Text, View, Image, TextInput} from 'react-native'
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 import Feather from 'react-native-vector-icons/Feather';
 import {styles} from '../Add/style'
 import { useNavigation } from '@react-navigation/native';
+import {launchImageLibrary} from 'react-native-image-picker';
 
 function Add() {
     const navigation = useNavigation();
+
+    const [camera, setCamera] = useState(null);
+    const [image, setImage] = useState(null);
+    const [response, setResponse] = useState(null);
+
+    const takePicture = async () => {
+        if (camera) {
+          const data = await camera.takePictureAsync(null);
+          setImage(data.uri);
+        }
+    };
+
+    const pickImage = async () => {
+        launchImageLibrary( 
+          {
+            mediaType: 'photo',
+            //maxHeight: 200,
+            //maxWidth: 200
+          },
+          response => {
+          console.log('Response = ', response);
+          setImage(response.uri)
+        })
+    };
 
     return (
         <View>                          
@@ -50,7 +75,7 @@ function Add() {
                         <Feather name='camera' style={styles.icon}/>
                     </TouchableOpacity>
                     <TouchableOpacity>
-                        <Feather name='image' style={styles.icon}/>
+                        <Feather name='image' style={styles.icon} onPress={pickImage.bind(this)}/>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate('PickPlaceScreen')}>
                         <Feather name='map-pin' style={styles.icon}/>
