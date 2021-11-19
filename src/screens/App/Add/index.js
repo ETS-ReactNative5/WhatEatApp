@@ -1,13 +1,25 @@
 import React, {useState} from 'react'
-import {Text, View, Image, TextInput} from 'react-native'
-import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
+import {Text, View, Image, TextInput, TouchableOpacity} from 'react-native'
+import { ScrollView } from 'react-native-gesture-handler';
 import Feather from 'react-native-vector-icons/Feather';
 import {styles} from '../Add/style'
 import { useNavigation } from '@react-navigation/native';
 import {launchImageLibrary} from 'react-native-image-picker';
+import { RNCamera } from 'react-native-camera';
+import Modal from "react-native-modal";
 
 function Add() {
     const navigation = useNavigation();
+
+    const [isModalVisible, setModalVisible] = useState(false);
+
+    const toggleModal = () => {
+        setModalVisible(!isModalVisible);
+    };
+
+    const [state, setState] = useState({
+        activeIndex: 1,
+    }); 
 
     const [camera, setCamera] = useState(null);
     const [image, setImage] = useState(null);
@@ -72,7 +84,7 @@ function Add() {
             </View>
             <View style={styles.bottonTab}>
                     <TouchableOpacity>
-                        <Feather name='camera' style={styles.icon}/>
+                        <Feather name='camera' style={styles.icon} onPress={toggleModal}/>
                     </TouchableOpacity>
                     <TouchableOpacity>
                         <Feather name='image' style={styles.icon} onPress={pickImage.bind(this)}/>
@@ -81,9 +93,37 @@ function Add() {
                         <Feather name='map-pin' style={styles.icon}/>
                     </TouchableOpacity>
                     <TouchableOpacity>
-                        <Feather name='upload' style={{fontSize: 32, marginHorizontal: 30, color: '#00b060'}}/>
+                        <Feather name='upload' style={{fontSize: 32, marginHorizontal: 30, color: '#00b060', }}/>
                     </TouchableOpacity>
-            </View>                
+            </View> 
+            <Modal isVisible={isModalVisible} animationIn='slideInUp' animationInTiming={500} style={{ }}>
+                <View style={{backgroundColor: '#f2f2f2', width: 410, height: 600, marginLeft: -20, alignItems: 'center'}}>
+                    <TouchableOpacity onPress={toggleModal}>
+                        <Feather name="x" size={32}/>
+                    </TouchableOpacity>
+                    <RNCamera
+                        ref={ref => setCamera(ref)}
+                        style={{flex: 1, justifyContent: 'flex-end', alignItems: 'center', width: 450}}
+                        type={RNCamera.Constants.Type.back}
+                        flashMode={RNCamera.Constants.FlashMode.off}
+                        androidCameraPermissionOptions={{
+                        title: 'Permission to use camera',
+                        message: 'We need your permission to use your camera',
+                        buttonPositive: 'Ok',
+                        buttonNegative: 'Cancel',
+                        }}
+                        androidRecordAudioPermissionOptions={{
+                            title: 'Permission to use audio recording',
+                            message: 'We need your permission to use your audio',
+                            buttonPositive: 'Ok',
+                            buttonNegative: 'Cancel',
+                        }}
+                        onGoogleVisionBarcodesDetected={({ barcodes }) => {
+                            console.log(barcodes);
+                        }}
+                    />
+                </View>
+            </Modal>               
         </View>
     );
 };
