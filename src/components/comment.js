@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
     content: {
         color: 'black',
         fontSize: 14,
+        width: 320,
     },
     image: {
         width: 32,

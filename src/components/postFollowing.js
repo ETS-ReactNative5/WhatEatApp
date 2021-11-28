@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 
-function PostFollowing({title, image, avatar, time, place, author, content, numLike, numComment}){
+function PostFollowing({title, image, avatar, time, place, author, content, numLike, numComment, onPress}){
     return(
         <View>
             <View style={styles.container}> 
@@ -19,10 +19,10 @@ function PostFollowing({title, image, avatar, time, place, author, content, numL
                         {time && <Text style={styles.time}> {time} </Text>}
                     </View>
                     <TouchableOpacity>
-                        <Feather name='more-vertical' style={{fontSize: 14, marginTop: 10, marginLeft: 250}}/>    
+                        <Feather name='more-vertical' style={{fontSize: 14, marginTop: 10, marginLeft: 240}}/>    
                     </TouchableOpacity>                       
                 </View>               
-                <TouchableOpacity style={styles.container2}>
+                <TouchableOpacity style={styles.container2} onPress={onPress}>
                     <Image style={styles.image} source={image}/> 
                     <View style={styles.rectangle}>
                         {title && <Text style={styles.title}> {title} </Text>}
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 14,
         marginTop: 4, 
-        textAlign: 'left'
+        textAlign: 'left',
     },
     title: {
         color: '#000',

@@ -13,7 +13,7 @@ function PlaceRecommend({title, image, rate, onPress}){
         <View style={styles.container}>
             <TouchableOpacity style={styles.rectangle} onPress={onPress}>
                 <Image style={styles.image} source={image}/>
-                {title && <Text style={styles.text}> {title} </Text>}
+                {title && <Text style={styles.text} numberOfLines={1} ellipsizeMode='tail'> {title} </Text>}
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                     {rate && <Text style={styles.rate}> {rate} </Text>}
                     <Feather name='star' style={styles.star}/>

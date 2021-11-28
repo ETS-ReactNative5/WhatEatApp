@@ -16,6 +16,9 @@ import Food from './App/Food'
 import PlaceScreen from './App/Place'
 import PickPlaceScreen from './App/PickPlaceScreen'
 import EditProfile from './App/EditProfile'
+import Friend from './App/Friend'
+import Chat from './App/Chat'
+import SearchResult from './App/SearchResult'
 
 export {
     Login, 
@@ -36,4 +39,7 @@ export {
     PlaceScreen,
     PickPlaceScreen,
     EditProfile,
+    Friend,
+    Chat,
+    SearchResult,
 };

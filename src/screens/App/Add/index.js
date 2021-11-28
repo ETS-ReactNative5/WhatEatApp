@@ -7,9 +7,12 @@ import { useNavigation } from '@react-navigation/native';
 import {launchImageLibrary} from 'react-native-image-picker';
 import { RNCamera } from 'react-native-camera';
 import Modal from "react-native-modal";
+import { Rating, AirbnbRating } from 'react-native-ratings';
 
 function Add() {
     const navigation = useNavigation();
+
+    const [rating, setRating] = useState(5);
 
     const [isModalVisible, setModalVisible] = useState(false);
 
@@ -45,6 +48,11 @@ function Add() {
         })
     };
 
+    const ratingCompleted = (rating) => {
+        console.log("Mức đánh giá: " + rating)
+        setRating(rating)
+    }
+
     return (
         <View>                          
             <View>        
@@ -69,15 +77,30 @@ function Add() {
                             <View style={styles.place}>
                                 <Feather name="map-pin" style={{fontSize: 24}}/>
                                 <View style={{marginLeft: 10}}>
-                                    <Text style={styles.placeName}>Gà rán Chicken Plus</Text>
-                                    <Text style={styles.placeAddress}>Số 6, Trần Văn Ơn, Thủ Dầu Một, Bình Dương</Text>
+                                    <Text style={styles.placeName}>Chicken Plus - Thủ Dầu Một</Text>
+                                    <Text style={styles.placeAddress}>356 Đường 30/4, P. Chánh Nghĩa, Thành Phố Thủ Dầu Một, Bình Dương</Text>
+                                </View>                                
+                            </View>
+                            <View style={styles.rate}>
+                                <Feather name="star" style={{fontSize: 24}}/>
+                                <View style={{marginLeft: 10, flexDirection: 'row'}}>
+                                    <Text style={{fontWeight: 'bold', marginRight: 5, marginTop: 15, fontSize: 16}}>{rating}</Text>
+                                    <Rating
+                                        type='custom'
+                                        onFinishRating={ratingCompleted}
+                                        style={{ paddingVertical: 10, }}
+                                        fractions={1}
+                                        tintColor='#f2f2f2'
+                                        imageSize={32}
+                                        startingValue={5}
+                                    />
                                 </View>                                
                             </View>
                             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={{marginHorizontal: 5}}>
                                 <Image source={require('../../../assets/img/sample.png')} style={styles.image}/>
-                                <Image source={require('../../../assets/img/sample.png')} style={styles.image}/>
-                                <Image source={require('../../../assets/img/sample.png')} style={styles.image}/>
-                                <Image source={require('../../../assets/img/sample.png')} style={styles.image}/>
+                                <Image source={require('../../../assets/img/cp2.png')} style={styles.image}/>
+                                <Image source={require('../../../assets/img/cp3.png')} style={styles.image}/>
+                                <Image source={require('../../../assets/img/cp4.png')} style={styles.image}/>
                             </ScrollView>
                     </View>
                 </ScrollView>

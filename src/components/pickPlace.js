@@ -14,7 +14,7 @@ function PickPlace({title, image, address, phone, onPress}){
             <TouchableOpacity style={styles.container} onPress={onPress}>                
                 <Image style={styles.image} source={image}/> 
                 <View>
-                    {title && <Text style={styles.text}> {title} </Text>}
+                    {title && <Text style={styles.text} numberOfLines={1} ellipsizeMode='tail'> {title} </Text>}
                     {address && <Text style={styles.place} numberOfLines={1} ellipsizeMode='tail'> {address} </Text>} 
                     {phone && <Text style={styles.phone}> {phone} </Text>}
                 </View>               
@@ -42,14 +42,16 @@ const styles = StyleSheet.create({
         marginTop: 10, 
         textAlign: 'left',
         marginLeft: 10,
+        width: 280
     },
     place: {
         color: '#000',
         fontStyle: 'italic',
         fontSize: 14,
         marginVertical: 5,
-        textAlign: 'right',
+        textAlign: 'left',
         marginLeft: 10,
+        width: 270
     },
     phone: {
         color: '#000',

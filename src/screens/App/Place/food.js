@@ -12,19 +12,19 @@ function PlaceFood() {
         <View>
             <View style={{flexDirection: 'row', marginTop: 4, flex: 1, flexWrap: 'wrap', marginLeft: 1}}>
                 <FoodPrice
-                    title="Mì"
-                    price="25.000đ"
-                    image={require('../../../assets/img/sample.png')}
+                    title="CÁNH GÀ SỐT NGŨ VỊ (10 MIẾNG)"
+                    price="149.000đ"
+                    image={require('../../../assets/img/garan1.png')}
                 />
                 <FoodPrice
-                    title="Mì gia truyền"
-                    price="25.000đ"
-                    image={require('../../../assets/img/sample.png')}
+                    title="GÀ NỬA CON TRUYỀN THỐNG"
+                    price="119.000đ"
+                    image={require('../../../assets/img/garan2.png')}
                 />
                 <FoodPrice
-                    title="Mì gia truyền cha truyền con nối"
-                    price="25.000đ"
-                    image={require('../../../assets/img/sample.png')}
+                    title="LẨU TOKBOKKI 7 PHÚT "
+                    price="119.000đ"
+                    image={require('../../../assets/img/garan3.png')}
                 />
             </View>            
         </View>

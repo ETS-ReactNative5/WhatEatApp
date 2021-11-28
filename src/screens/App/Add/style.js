@@ -55,7 +55,7 @@ export const styles = StyleSheet.create({
       alignItems: 'center',
       alignSelf: 'center',
       position: 'absolute',
-      bottom: 150,
+      bottom: 40,
       flex: 1,
       borderRadius: 8,
       shadowColor: "#000",
@@ -78,9 +78,15 @@ export const styles = StyleSheet.create({
     },
     place: {
       marginHorizontal: 18,
-      marginVertical: 20,
+      marginVertical: 10,
       flexDirection: 'row',
       alignItems: 'center'
+    },
+    rate: {
+      marginHorizontal: 18,
+      marginBottom: 20,
+      flexDirection: 'row',
+      alignItems: 'center',
     },
     placeName: {
       fontWeight: 'bold'

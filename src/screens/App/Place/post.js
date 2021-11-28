@@ -12,37 +12,37 @@ function PlacePost() {
         <View>
             <View style={{flexDirection: 'row', marginTop: 4, flex: 1, flexWrap: 'wrap', marginLeft: 1}}>
                 <PostForYou
-                    title='Gà rán Chicken Plus'
-                    image={require('../../../assets/img/sample.png')}
-                    place='Số 6, Trần Văn Ơn, TDM, Bình Dương'
+                    title='Chicken Plus - Thủ Dầu Một'
+                    image={require('../../../assets/img/cp2.png')}
+                    place='356 Đường 30/4, P. Chánh Nghĩa, Thị xã Thủ Dầu Một, Bình Dương'
                     author='Minh Hiếu'
                     numLike='10'
                     numComment='10'
                     onPress={() => navigation.navigate('DetailPost')}
                 />
                 <PostForYou
-                    title='Gà rán Chicken Plus'
+                    title='Chicken Plus - Thủ Dầu Một'
                     image={require('../../../assets/img/sample.png')}
-                    place='Số 6, Trần Văn Ơn, TDM, Bình Dương'
-                    author='Minh Hiếu'
+                    place='356 Đường 30/4, P. Chánh Nghĩa, Thị xã Thủ Dầu Một, Bình Dương'
+                    author='Phước Trung'
                     numLike='10'
                     numComment='10'
                     onPress={() => navigation.navigate('DetailPost')}
                 />
                 <PostForYou
-                    title='Gà rán Chicken Plus'
-                    image={require('../../../assets/img/sample.png')}
-                    place='Số 6, Trần Văn Ơn, TDM, Bình Dương'
-                    author='Minh Hiếu'
+                    title='Chicken Plus - Thủ Dầu Một'
+                    image={require('../../../assets/img/cp3.png')}
+                    place='356 Đường 30/4, P. Chánh Nghĩa, Thị xã Thủ Dầu Một, Bình Dương'
+                    author='Thành Đạt'
                     numLike='10'
                     numComment='10'
                     onPress={() => navigation.navigate('DetailPost')}
                 />
                 <PostForYou
-                    title='Gà rán Chicken Plus'
-                    image={require('../../../assets/img/sample.png')}
-                    place='Số 6, Trần Văn Ơn, TDM, Bình Dương'
-                    author='Minh Hiếu'
+                    title='Chicken Plus - Thủ Dầu Một'
+                    image={require('../../../assets/img/cp4.png')}
+                    place='356 Đường 30/4, P. Chánh Nghĩa, Thị xã Thủ Dầu Một, Bình Dương'
+                    author='Minh Nghĩa'
                     numLike='10'
                     numComment='10'
                     onPress={() => navigation.navigate('DetailPost')}

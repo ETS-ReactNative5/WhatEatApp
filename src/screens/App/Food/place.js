@@ -12,27 +12,27 @@ function Place() {
         <View>
             <View style={{flexDirection: 'row', marginTop: 4, flex: 1, flexWrap: 'wrap', marginLeft: 1}}>
                 <PickPlace
-                    title="ChickenPlus"
-                    image={require('../../../assets/img/sample.png')}
-                    address="200, Trần Văn Ơn, Thủ Dầu Một, Bình Dương"
+                    title="Phở Pasteur"
+                    image={require('../../../assets/img/pho1.png')}
+                    address="232 Cách Mạng Tháng 8, P. Phú Cường, Thành Phố Thủ Dầu Một, Bình Dương"
                     phone="0346489037"
                 />
                 <PickPlace
-                    title="ChickenPlus"
-                    image={require('../../../assets/img/sample.png')}
-                    address="200, Trần Văn Ơn, Thủ Dầu Một, Bình Dương"
+                    title="Phở Dạ"
+                    image={require('../../../assets/img/pho2.png')}
+                    address="8 Nguyễn Trãi, P. Phú Cường, Thành Phố Thủ Dầu Một, Bình Dương"
                     phone="0346489037"
                 />
                 <PickPlace
-                    title="ChickenPlus"
-                    image={require('../../../assets/img/sample.png')}
-                    address="200, Trần Văn Ơn, Thủ Dầu Một, Bình Dương"
+                    title="Phở Anh Vũ"
+                    image={require('../../../assets/img/pho3.png')}
+                    address="288 Huỳnh Văn Lũy, P. Phú Lợi, Thành Phố Thủ Dầu Một, Bình Dương"
                     phone="0346489037"
                 />
                 <PickPlace
-                    title="ChickenPlus"
-                    image={require('../../../assets/img/sample.png')}
-                    address="200, Trần Văn Ơn, Thủ Dầu Một, Bình Dương"
+                    title="Phở Cô Bảy"
+                    image={require('../../../assets/img/pho4.png')}
+                    address="400 Đại Lộ Bình Dương , Thành Phố Thủ Dầu Một, Bình Dương"
                     phone="0346489037"
                 />
             </View>            

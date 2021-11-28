@@ -13,47 +13,51 @@ function ForYou({navigation}) {
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={styles.foodContainer}>
                 <FoodRecommend 
                     title="Phở"
+                    image={require('../../../assets/img/pho.png')}
+                    onPress={() => navigation.navigate('Food')}
+                />
+                <FoodRecommend 
+                    title="Bún Bò"
                     image={require('../../../assets/img/bunbo.png')}
                     onPress={() => navigation.navigate('Food')}
                 />
                 <FoodRecommend 
-                    title="Phở"
-                    image={require('../../../assets/img/bunbo.png')}
-                    onPress={() => navigation.navigate('Food')}
+                    title="Bánh Mì"
+                    image={require('../../../assets/img/banhmi.png')}
                 />
                 <FoodRecommend 
-                    title="Phở"
-                    image={require('../../../assets/img/bunbo.png')}
+                    title="Cơm Tấm"
+                    image={require('../../../assets/img/comtam.png')}
                 />
                 <FoodRecommend 
-                    title="Phở"
-                    image={require('../../../assets/img/bunbo.png')}
+                    title="Gà Rán"
+                    image={require('../../../assets/img/garan.png')}
                 />
                 <FoodRecommend 
-                    title="Phở"
-                    image={require('../../../assets/img/bunbo.png')}
+                    title="Trà Sữa"
+                    image={require('../../../assets/img/trasua.png')}
                 />
             </ScrollView>
             <Text style={styles.title}>Địa điểm nổi bật</Text>
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={styles.placeContainer}>
                 <PlaceRecommend 
-                    title="Mì gia Khánh Duy"
+                    title="Chicken Plus"
                     rate='4.5'
                     image={require('../../../assets/img/place.png')}
                     onPress={() => navigation.navigate('PlaceScreen')}
                 />
                 <PlaceRecommend 
-                    title="Mì gia Khánh Duy"
+                    title="Trà sữa Đậu"
                     rate='4.5'
                     image={require('../../../assets/img/place.png')}
                 />
                 <PlaceRecommend 
-                    title="Mì gia Khánh Duy"
+                    title="Mì cay Seoul"
                     rate='4.5'
                     image={require('../../../assets/img/place.png')}
                 />
                 <PlaceRecommend 
-                    title="Mì gia Khánh Duy"
+                    title="Nem nướng Nhã Phương"
                     rate='4.5'
                     image={require('../../../assets/img/place.png')}
                 />
@@ -61,32 +65,32 @@ function ForYou({navigation}) {
             <PostForYou
                 title='Gà rán Chicken Plus'
                 image={require('../../../assets/img/sample.png')}
-                place='Số 6, Trần Văn Ơn, TDM, Bình Dương'
+                place='356 đường 30/4, phường Chánh Nghĩa, thành phố Thủ Dầu Một, Bình Dương'
                 author='Minh Hiếu'
                 numLike='10'
                 numComment='10'
                 onPress={() => navigation.navigate('DetailPost')}
             />
             <PostForYou
-                title='Gà rán Chicken Plus'
-                image={require('../../../assets/img/sample.png')}
-                place='Số 6, Trần Văn Ơn, TDM, Bình Dương'
+                title='Cơm Tấm 68'
+                image={require('../../../assets/img/sample2.png')}
+                place='309 Thích Quảng Đức, P. Phú Cường, Thị xã Thủ Dầu Một, Bình Dương'
+                author='Phước Trung'
+                numLike='15'
+                numComment='10'
+            />
+            <PostForYou
+                title='Bánh Tráng Trộn Gánh Hàng Rong'
+                image={require('../../../assets/img/sample3.png')}
+                place='113/108B Đường 30 Tháng 4, P. Phú Hòa, Thị xã Thủ Dầu Một, Bình Dương'
                 author='Minh Hiếu'
                 numLike='10'
                 numComment='10'
             />
             <PostForYou
-                title='Gà rán Chicken Plus'
-                image={require('../../../assets/img/sample.png')}
-                place='Số 6, Trần Văn Ơn, TDM, Bình Dương'
-                author='Minh Hiếu'
-                numLike='10'
-                numComment='10'
-            />
-            <PostForYou
-                title='Gà rán Chicken Plus'
-                image={require('../../../assets/img/sample.png')}
-                place='Số 6, Trần Văn Ơn, TDM, Bình Dương'
+                title='Phúc Long Nguyễn Đình Chiểu Bình Dương'
+                image={require('../../../assets/img/sample4.png')}
+                place='44 Nguyễn Đình Chiểu, P. Phú Cường, Thị xã Thủ Dầu Một, Bình Dương'
                 author='Minh Hiếu'
                 numLike='10'
                 numComment='10'

@@ -1,10 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Text, View, Image, TextInput, TouchableOpacity} from 'react-native'
 import { styles } from '../Login/style';
 import FontAwesome5Icon from 'react-native-vector-icons/FontAwesome5';
 import { NavigationContainer } from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
+import auth from '@react-native-firebase/auth';
 
-function Login({navigation}) {
+function Login() {
+    const navigation = useNavigation();
+
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const onSignIn = () => {
+        auth()
+        .signInWithEmailAndPassword(email, password)
+        .then((result) => {
+            console.log(result);
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+    }
+
     return (
         <View style={styles.container}>
             <Image
@@ -15,12 +33,13 @@ function Login({navigation}) {
             <View style={{flexDirection: 'column', alignContent: 'center', marginHorizontal: 30, marginVertical: 10}}>
                 
                 <Text style={{marginBottom: 5, marginTop: 10, marginLeft: 5}}>
-                    Tên đăng nhập
+                    Email
                 </Text>
 
                 <View style={styles.textInput}>
                     <TextInput
-                        placeholder="Tên đăng nhập"
+                        placeholder="Email"
+                        onChangeText={email => setEmail(email)}
                     />
                 </View>
                 
@@ -32,8 +51,9 @@ function Login({navigation}) {
                     <TextInput
                         placeholder="Mật khẩu"
                         secureTextEntry={true}
+                        onChangeText={password => setPassword(password)}
                     />
-                    <FontAwesome5Icon name='eye-slash' size={14} style={{marginTop: 17, marginLeft: 220}}/>
+                    <FontAwesome5Icon name='eye-slash' size={14} style={{marginTop: 17, marginLeft: 240}}/>
                 </View>
                 
                 
@@ -47,7 +67,7 @@ function Login({navigation}) {
                         <Text style={{color: 'white'}}>ĐĂNG KÝ</Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={styles.buttonGreen} onPress={() => navigation.navigate('AppStack')}>
+                    <TouchableOpacity style={styles.buttonGreen} onPress={onSignIn}>
                         <Text style={{color: 'white'}}>ĐĂNG NHẬP</Text>
                     </TouchableOpacity>
                 </View>

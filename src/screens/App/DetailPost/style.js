@@ -71,26 +71,52 @@ export const styles = StyleSheet.create({
       fontSize: 32,
       marginHorizontal: 30
     },
+    iconUnlike: {
+      fontSize: 32,
+      marginHorizontal: 30
+    },
+    iconLike: {
+      fontSize: 32,
+      marginHorizontal: 30,
+      color: 'red'
+    },
+    iconUnSave: {
+      fontSize: 32,
+      marginHorizontal: 30
+    },
+    iconSave: {
+      fontSize: 32,
+      marginHorizontal: 34.5,
+      color: '#00b060'
+    },
     content: {
       textAlign: 'left',
-      marginHorizontal: 20
+      marginHorizontal: 20,
+      marginTop: 10
     },
     place: {
       marginHorizontal: 18,
-      marginVertical: 20,
       flexDirection: 'row',
-      alignItems: 'center'
+      alignItems: 'center',
+      marginTop: 10
     },
     placeName: {
       fontWeight: 'bold'
     },
     placeAddress: {
-      fontStyle: 'italic'
+      fontStyle: 'italic',
+      width: 350
     },
     image: {
       width: 250,
       height: 250,
       borderRadius: 8,
       marginHorizontal: 5
-    }
+    },
+    rate: {
+      marginHorizontal: 18,
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginBottom: 10
+    },
 });

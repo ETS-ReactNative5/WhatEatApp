@@ -53,17 +53,22 @@ function Food({navigation}){
                 </View>
             </View> 
             <ScrollView style={styles.container3}>
-                <Image source={require('../../../assets/img/bunbo.png')} style={styles.image}/>
+                <Image source={require('../../../assets/img/pho.png')} style={styles.image}/>
                 <Text style={styles.description}>
-                    Mô tả món ăn, mô tả món ăn, mô tả món ăn, mô tả món ăn,
-                    Mô tả món ăn, mô tả món ăn, mô tả món ăn, mô tả món ăn,
-                    Mô tả món ăn, mô tả món ăn, mô tả món ăn, mô tả món ăn,
-                    Mô tả món ăn, mô tả món ăn, mô tả món ăn, mô tả món ăn,
-                    Mô tả món ăn, mô tả món ăn, mô tả món ăn, mô tả món ăn,
-                    Mô tả món ăn, mô tả món ăn, mô tả món ăn, mô tả món ăn,
-                    Mô tả món ăn, mô tả món ăn, mô tả món ăn, mô tả món ăn,
-                    Mô tả món ăn, mô tả món ăn, mô tả món ăn, mô tả món ăn,
+                Phở là một món ăn truyền thống của Việt Nam, có nguồn gốc từ Hà Nội và Nam Định, và được xem là một trong những món ăn tiêu biểu cho nền ẩm thực Việt Nam. Thành phần chính của phở là bánh phở và nước dùng cùng với thịt bò hoặc thịt gà cắt lát mỏng.
                 </Text>
+                <View style={{flexDirection: 'row', marginHorizontal: 15, paddingRight: 135, marginVertical: 5}}>
+                    <Text style={{fontWeight: 'bold', fontSize: 16, width: 140}}>Thành phần chính: </Text>
+                    <Text style={{fontSize: 14,}}>Bánh phở, nước dùng, thịt bò hoặc thịt gà kèm với một số loại gia vị khác</Text>
+                </View>
+                <View style={{flexDirection: 'row', marginHorizontal: 15, paddingRight: 135, marginVertical: 5}}>
+                    <Text style={{fontWeight: 'bold', fontSize: 16, width: 140}}>Loại: </Text>
+                    <Text style={{fontSize: 14,}}>Mì nước</Text>
+                </View>
+                <View style={{flexDirection: 'row', marginHorizontal: 15, paddingRight: 135, marginVertical: 5}}>
+                    <Text style={{fontWeight: 'bold', fontSize: 16, width: 140}}>Biến thể: </Text>
+                    <Text style={{fontSize: 14,}}>Phở gà, phở tái, phở tái lăn, phở gầu, phở sốt vang</Text>
+                </View>
                 <View style={{marginTop: 20}}>
                         <View style={{ flexDirection: 'row', justifyContent: 'space-around', }}>
                             <TouchableOpacity

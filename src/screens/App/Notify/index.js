@@ -12,61 +12,42 @@ function Notify({navigation}) {
                 <Text style={styles.title}>Thông báo</Text>
             </View>
             <View style={{marginTop: 10,}}>
-            <ScrollView style={{height: 670, bottom: 7}}>
+            <ScrollView style={{height: 690, bottom: 7}}>
                     <Text style={styles.timeNew}>Hôm nay</Text>
                     <NotiLike
-                        imageUser={require('../../../assets/img/ava.png')}
-                        username="Minh Hiếu, Phước Trung, Minh Nghĩa"
-                        imagePost={require('../../../assets/img/sample.png')}
+                        imageUser={require('../../../assets/img/ava2.png')}
+                        username="Phước Trung, Minh Nghĩa, Thành Đạt"
+                        imagePost={require('../../../assets/img/sample2.png')}
                     />
                     <NotiComment
-                        imageUser={require('../../../assets/img/ava.png')}
-                        username="Minh Hiếu, Phước Trung, Minh Nghĩa"
-                        imagePost={require('../../../assets/img/sample.png')}
+                        imageUser={require('../../../assets/img/ava2.png')}
+                        username="Phước Trung, Minh Nghĩa, Thành Đạt"
+                        imagePost={require('../../../assets/img/sample2.png')}
                     />
                     <NotiFollow
-                        imageUser={require('../../../assets/img/ava.png')}
-                        username="Minh Hiếu"
+                        imageUser={require('../../../assets/img/ava3.png')}
+                        username="Thành Đạt"
                     />
                     <Text style={styles.timeOld}>Tuần trước</Text>
                     <NotiLike
-                        imageUser={require('../../../assets/img/ava.png')}
-                        username="Minh Hiếu, Phước Trung, Minh Nghĩa"
-                        imagePost={require('../../../assets/img/sample.png')}
+                        imageUser={require('../../../assets/img/ava4.png')}
+                        username="Minh Nghĩa"
+                        imagePost={require('../../../assets/img/sample4.png')}
                     />
                     <NotiComment
-                        imageUser={require('../../../assets/img/ava.png')}
-                        username="Minh Hiếu, Phước Trung, Minh Nghĩa"
-                        imagePost={require('../../../assets/img/sample.png')}
+                        imageUser={require('../../../assets/img/ava2.png')}
+                        username="Phước Trung, Minh Nghĩa"
+                        imagePost={require('../../../assets/img/sample3.png')}
                     />
                     <NotiFollow
-                        imageUser={require('../../../assets/img/ava.png')}
-                        username="Minh Hiếu"
+                        imageUser={require('../../../assets/img/ava4.png')}
+                        username="Minh Nghĩa"
                     />
                     <Text style={styles.timeOld}>Tháng trước</Text>
                     <NotiLike
-                        imageUser={require('../../../assets/img/ava.png')}
-                        username="Minh Hiếu, Phước Trung, Minh Nghĩa"
-                        imagePost={require('../../../assets/img/sample.png')}
-                    />
-                    <NotiComment
-                        imageUser={require('../../../assets/img/ava.png')}
-                        username="Minh Hiếu, Phước Trung, Minh Nghĩa"
-                        imagePost={require('../../../assets/img/sample.png')}
-                    />
-                    <NotiFollow
-                        imageUser={require('../../../assets/img/ava.png')}
-                        username="Minh Hiếu"
-                    />
-                    <NotiComment
-                        imageUser={require('../../../assets/img/ava.png')}
-                        username="Minh Hiếu, Phước Trung, Minh Nghĩa"
-                        imagePost={require('../../../assets/img/sample.png')}
-                    />
-                    <NotiLike
-                        imageUser={require('../../../assets/img/ava.png')}
-                        username="Minh Hiếu, Phước Trung, Minh Nghĩa"
-                        imagePost={require('../../../assets/img/sample.png')}
+                        imageUser={require('../../../assets/img/ava4.png')}
+                        username="Minh Nghĩa, Phước Trung, Thành Đạt"
+                        imagePost={require('../../../assets/img/migia3.png')}
                     />
             </ScrollView> 
             </View>            

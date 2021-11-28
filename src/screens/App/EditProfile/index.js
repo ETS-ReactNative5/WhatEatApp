@@ -10,8 +10,11 @@ import {
 import Feather from 'react-native-vector-icons/Feather'
 import {styles} from '../EditProfile/style'
 import {PickPlace} from '../../../components/index'
+import { useNavigation } from '@react-navigation/native';
 
 function EditProfile(){
+    const navigation = useNavigation();
+
     const [avatar, setAvatar] = useState('');
     const [fullname, setFullname] = useState('');
     const [username, setUsername] = useState('');
@@ -20,7 +23,7 @@ function EditProfile(){
     return(
         <View style={styles.container}>
             <View style={styles.container1}>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.goBack()}>
                     <Feather name="chevron-left" size={32}/>
                 </TouchableOpacity>
                 <Text style={styles.title}>Thông tin cá nhân</Text>

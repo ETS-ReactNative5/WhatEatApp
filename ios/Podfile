@@ -20,6 +20,10 @@ target 'WhatEat' do
 
   pod 'react-native-camera', :path => '../node_modules/react-native-camera'
 
+  pod 'RNFBApp', :path => '../node_modules/@react-native-firebase/app'
+
+  pod 'RNFBAuth', :path => '../node_modules/@react-native-firebase/auth'
+
   target 'WhatEatTests' do
     inherit! :complete
     # Pods for testing

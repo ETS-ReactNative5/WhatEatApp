@@ -53,14 +53,14 @@ function PlaceScreen(){
                     <Feather name="chevron-left" style={{fontSize: 32}}/>                    
                 </TouchableOpacity>          
                 <View style={styles.container2}>                               
-                    <Text style={styles.title}>Mỳ Gia Khánh Duy</Text>
+                    <Text style={styles.title}>Chicken Plus - Thủ Dầu Một</Text>
                 </View>
             </View> 
             <ScrollView style={styles.container3}>
                 <View style={{marginHorizontal: 25, marginBottom: 10}}>
                     <View style={{flexDirection: 'row',}}>
                         <Feather name="home" style={styles.icon}/>
-                        <Text style={styles.text} numberOfLines={2}>200, Trần Văn Ơn, Thủ Dầu Một, Bình Dương</Text>
+                        <Text style={styles.text} numberOfLines={2}>356 Đường 30/4, P. Chánh Nghĩa, Thành Phố Thủ Dầu Một, Bình Dương</Text>
                     </View>
                     <View style={{flexDirection: 'row', marginTop: 10}}>
                         <Feather name="phone" style={styles.icon}/>
@@ -68,11 +68,11 @@ function PlaceScreen(){
                     </View>
                     <View style={{flexDirection: 'row', marginTop: 10}}>
                         <Feather name="clock" style={styles.icon}/>
-                        <Text style={styles.text} numberOfLines={2}>09:00 - 21:00</Text>
+                        <Text style={styles.text} numberOfLines={2}>08:00 - 22:00</Text>
                     </View>
                     <View style={{flexDirection: 'row', marginTop: 10}}>
                         <Feather name="dollar-sign" style={styles.icon}/>
-                        <Text style={styles.text} numberOfLines={2}>25.000đ - 30.000đ</Text>
+                        <Text style={styles.text} numberOfLines={2}>15.000đ - 200.000đ</Text>
                     </View>
                     <View style={{flexDirection: 'row', marginTop: 10}}>
                         <Feather name="star" style={styles.icon}/>
@@ -81,13 +81,26 @@ function PlaceScreen(){
                     </View>
                 </View>
                 <View>
-                <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={{marginRight: 10}}>
-                    <Image source={require('../../../assets/img/bunbo.png')} style={styles.image}/>
-                    <Image source={require('../../../assets/img/bunbo.png')} style={styles.image}/>
-                    <Image source={require('../../../assets/img/bunbo.png')} style={styles.image}/>
-                </ScrollView>
+                    <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={{marginRight: 10}}>
+                        <Image source={require('../../../assets/img/sample.png')} style={styles.image}/>
+                        <Image source={require('../../../assets/img/cp2.png')} style={styles.image}/>
+                        <Image source={require('../../../assets/img/cp4.png')} style={styles.image}/>
+                    </ScrollView>
                 </View>
-                <View style={{marginTop: 20}}>
+                <TouchableOpacity 
+                    style={{
+                        alignItems: 'center', 
+                        padding: 10, 
+                        backgroundColor: '#00b060', 
+                        borderRadius: 8,
+                        marginHorizontal: 10,
+                        marginVertical: 10
+                    }}
+                    onPress={() => navigation.navigate('Map')}
+                >
+                    <Text style={{color: 'white', fontSize: 16}}>MỞ BẢN ĐỒ</Text>
+                </TouchableOpacity>
+                <View style={{marginTop: 10}}>
                         <View style={{ flexDirection: 'row', justifyContent: 'space-around', }}>
                             <TouchableOpacity
                                 onPress={() => selectTab(1)} 

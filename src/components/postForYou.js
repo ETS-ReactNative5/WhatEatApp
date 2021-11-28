@@ -14,7 +14,7 @@ function PostForYou({title, image, place, author, numLike, numComment, onPress})
             <TouchableOpacity style={styles.container} onPress={onPress}>                
                 <Image style={styles.image} source={image}/> 
                 <View style={styles.rectangle}>
-                    {title && <Text style={styles.text}> {title} </Text>}
+                    {title && <Text style={styles.text} numberOfLines={1}> {title} </Text>}
                     {place && <Text style={styles.place} numberOfLines={1} ellipsizeMode='tail'> {place} </Text>} 
                     {author && <Text style={styles.author}> {author} </Text>}
                     <View style={{flexDirection: 'row'}}>

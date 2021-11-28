@@ -5,12 +5,13 @@ export const styles = StyleSheet.create({
       flex: 1,
       flexDirection: 'column',
       backgroundColor: 'white',
+      height: 800
     },
     logo: {
         width: 100,
         height: 110,
         alignSelf: 'center',
-        marginTop: 20
+        marginTop: 50
     },
     title: {
         alignSelf: 'center',
