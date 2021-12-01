@@ -74,7 +74,7 @@ function Map() {
     return (
         <View>
             <MapView
-                    style={{width: null, height: 740}}
+                    style={{width: null, height: 735}}
                     region={{
                         latitude: 10.980638,
                         longitude: 106.674723,

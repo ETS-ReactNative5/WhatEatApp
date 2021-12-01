@@ -49,6 +49,7 @@ function EditProfile(){
                             style={styles.textInput}
                             value={fullname}
                             onChangeText={setFullname}
+                            value='Minh Hiếu'
                         />
                     </View>
                     <View style={styles.textInputContainer}>
@@ -58,6 +59,7 @@ function EditProfile(){
                             style={styles.textInput}
                             value={username}
                             onChangeText={setUsername}
+                            value='@hieutm'
                         />
                     </View>
                     <View style={styles.textInputContainer}>
@@ -69,6 +71,7 @@ function EditProfile(){
                             numberOfLines={2}
                             value={description}
                             onChangeText={setDescription}
+                            value='Food Reviewer #20000812'
                         />
                     </View>
                 </ScrollView>

@@ -145,12 +145,8 @@ function Regist() {
                             <FontAwesome5Icon name='eye-slash' size={14} style={{marginTop: 17, marginLeft: 145}}/>
                         </View>
                     */}
-                    
-                    <Text style={{color: '#00B060', marginBottom: 25, marginTop: 10, marginLeft: 5}}>
-                        Quên mật khẩu?
-                    </Text>
 
-                    <View style={{flexDirection: 'row', alignSelf: 'center'}}>
+                    <View style={{flexDirection: 'row', alignSelf: 'center', marginTop: 40}}>
                         <TouchableOpacity style={styles.buttonGrey} onPress={() => navigation.navigate('Login')}>
                             <Text style={{color: 'white'}}>ĐĂNG NHẬP</Text>
                         </TouchableOpacity>
@@ -163,7 +159,7 @@ function Regist() {
 
                 <View style={{alignSelf: 'center', marginHorizontal: 10, flexDirection: 'row'}}>
                     <View style={{height: 0.5, width: 78, backgroundColor: 'black', marginVertical: 10}} /> 
-                    <Text style={{paddingHorizontal: 10}}>Hoặc đăng nhập bằng</Text>
+                    <Text style={{paddingHorizontal: 10}}>Hoặc đăng ký bằng</Text>
                     <View style={{height: 0.5, width: 78, backgroundColor: 'black', marginVertical: 10}} />
                 </View>
 
